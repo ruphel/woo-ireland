@@ -162,6 +162,7 @@ add_filter( 'woocommerce_checkout_fields' , 'phs_override_postcode_shipping_fiel
 function phs_override_postcode_shipping_fields( $fields ) {
      $fields['shipping']['shipping_postcode']['placeholder'] = ' e.g None';
      $fields['shipping']['shipping_postcode']['label'] = 'Postcode';
+     $fields['billing']['billing_postcode']['required'] = false;
      return $fields;
 }
 
